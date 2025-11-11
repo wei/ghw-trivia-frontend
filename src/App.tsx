@@ -211,8 +211,6 @@ function App() {
         onStartSession={handleStartSession}
         onEndSession={handleEndSession}
         isLoading={loading}
-        currentQuestion={currentQuestion?.question}
-        isSessionActive={currentQuestion?.is_active}
       />
 
       {/* Confetti trigger */}
