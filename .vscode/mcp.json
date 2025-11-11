@@ -1,0 +1,21 @@
+{
+    "servers": {
+        "Trivia API MCP Server": {
+			"command": "uvx",
+			"args": [
+				"awslabs.openapi-mcp-server@latest"
+			],
+			"env": {
+				"API_NAME": "Trivia API MCP",
+				"API_BASE_URL": "http://ghw-trivia.duckdns.org:8000",
+				"API_SPEC_URL": "http://ghw-trivia.duckdns.org:8000/openapi.json",
+				"LOG_LEVEL": "ERROR",
+				"ENABLE_PROMETHEUS": "false",
+				"ENABLE_OPERATION_PROMPTS": "true",
+				"UVICORN_TIMEOUT_GRACEFUL_SHUTDOWN": "5.0",
+				"UVICORN_GRACEFUL_SHUTDOWN": "true"
+			},
+			"type": "stdio"
+		}
+    }
+}
